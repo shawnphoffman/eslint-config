@@ -1,8 +1,8 @@
 module.exports = {
 	env: { es6: true },
-	extends: ['airbnb-base', 'prettier'],
+	// extends: ['airbnb-base', 'prettier'],
 	plugins: ['simple-import-sort'],
-	parserOptions: { ecmaVersion: 'latest' },
+	// parserOptions: { ecmaVersion: 'latest' },
 	rules: {
 		'simple-import-sort/imports': [
 			'error',
