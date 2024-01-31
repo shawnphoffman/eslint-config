@@ -1,5 +1,5 @@
 {
-	"name": "@shawnphoffman/eslint-config-shawndev",
+	"name": "@shawnphoffman/eslint-config",
 	"version": "1.0.0",
 	"description": "Shared ESLint config for my projects",
 	"license": "MIT",
@@ -17,9 +17,11 @@
 		"eslint-plugin-import": "^2.27.5"
 	},
 	"devDependencies": {
+		"@shawnphoffman/prettier-config": "^1.0.0",
 		"eslint": "^8.37.0",
 		"prettier": "^2.8.7"
 	},
+	"prettier": "@shawnphoffman/prettier-config",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/"
 	}
