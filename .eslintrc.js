@@ -8,12 +8,28 @@ module.exports = {
 			'error',
 			{
 				groups: [
+					//
 					['^\\u0000'],
+					//
 					['^react$', '^react', '^@?\\w'],
+					//
 					['^(@root|types|data)(/.*)'],
-					['^(app|components|utils|context|config|pages|hooks|styles|public)(/.*)'],
-					[('^\\.\\.(?!/?$)', '^\\.\\./?$')],
-					['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+					[
+						//
+						'^@/\\w',
+						'^(app|components|utils|context|config|pages|hooks|styles|public)(/.*)',
+					],
+					[
+						//
+						'^\\.\\.(?!/?$)',
+						'^\\.\\./?$',
+					],
+					[
+						//
+						'^\\./(?=.*/)(?!/?$)',
+						'^\\.(?!/?$)',
+						'^\\./?$',
+					],
 				],
 			},
 		],
