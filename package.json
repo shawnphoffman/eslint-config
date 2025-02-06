@@ -1,15 +1,12 @@
 {
 	"name": "@shawnphoffman/eslint-config",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Shared ESLint config for my projects",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint . && prettier --check {,*/**/}*.js",
 		"format": "eslint . --fix && prettier --write {,*/**/}*.js"
-	},
-	"peerDependencies": {
-		"eslint": "^8.37.0"
 	},
 	"dependencies": {
 		"eslint-config-airbnb-base": "^15.0.0",
